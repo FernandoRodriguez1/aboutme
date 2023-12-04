@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+}
+body {
+  background-color: black;
+  margin: 0; /* Puede ser útil quitar el margen predeterminado del body */
+}

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .principal {
+    align-items: center;
+    background-color: #212529;
+    height: max-content;
+    padding: 3vh;
+    border-radius: 20px;
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    border-bottom: 5px solid cornflowerblue;
+    color: whitesmoke;
+  }
+  
+  .Me {
+    align-items: center;
+    height: 100px;
+    width: max-content; /* Ajusta el ancho según tus necesidades */
+    padding-right: 50px;
+  }
+  
