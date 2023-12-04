@@ -1,6 +1,8 @@
 .container {
     display: flex;
     justify-content: space-between;
+    padding-left: 160px;
+    padding-right: 320px;
   }
   
   .principal {
@@ -8,8 +10,9 @@
     background-color: #212529;
     height: max-content;
     padding: 3vh;
+    
     border-radius: 20px;
-    width: 300px; /* Ajusta el ancho según tus necesidades */
+    width: 500px; /* Ajusta el ancho según tus necesidades */
     border-bottom: 5px solid cornflowerblue;
     color: whitesmoke;
   }

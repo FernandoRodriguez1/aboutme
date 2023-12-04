@@ -2,6 +2,7 @@
   text-align: center;
 }
 body {
-  background-color: black;
+  background-image: url("Images/background-image.jpg");
   margin: 0; /* Puede ser útil quitar el margen predeterminado del body */
+  background-size: cover;
 }
