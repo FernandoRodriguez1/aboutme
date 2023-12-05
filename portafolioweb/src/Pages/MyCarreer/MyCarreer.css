@@ -1,0 +1,44 @@
+.principalproyects {
+  margin-left: 10vh;
+  overflow: hidden;
+  width: 90%;
+  text-align: left;
+  background-color: #212529;
+
+  border-radius: 20px;
+
+  border-bottom: 5px solid cornflowerblue;
+  color: whitesmoke;
+}
+.title {
+  text-align: center;
+}
+.BackCode {
+  width: 110%;
+  grid-column: 1/5;
+  height: 100%;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+.AboutInfo {
+  grid-column: 5/10;
+  padding: 3em;
+}
+.AboutInfo h2 {
+  font-size: 2em;
+  color: #fff;
+}
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: aqua;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+.about p {
+  margin-bottom: 1em;
+}

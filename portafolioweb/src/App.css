@@ -2,7 +2,7 @@
   text-align: center;
 }
 body {
-  background-image: url("Images/background-image.jpg");
+  background-color: #191c32;
   margin: 0; /* Puede ser útil quitar el margen predeterminado del body */
   background-size: cover;
 }

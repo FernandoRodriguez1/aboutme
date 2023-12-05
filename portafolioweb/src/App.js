@@ -3,8 +3,10 @@ import { useEffect } from "react";
 import { urlClimas } from "./endpoints";
 import Footer from "./Pages/Footer/Footer";
 import Aboutme from "./Pages/Aboutme/Aboutme";
-import Proyects from "./Pages/Proyects/Proyects";
+import MyCarreer from "./Pages/MyCarreer/MyCarreer";
 import Contact from "./Pages/Contact/Contact";
+import Navbar from "./Pages/Navbar/Navbar";
+import Portafolio from "./Pages/Portafolio/Portafolio";
 
 function App() {
   useEffect(() => {
@@ -27,10 +29,12 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <Aboutme />
-      <Proyects />
-      <Footer />
+      <MyCarreer />
+      <Portafolio />
       <Contact />
+      <Footer />
     </>
   );
 }

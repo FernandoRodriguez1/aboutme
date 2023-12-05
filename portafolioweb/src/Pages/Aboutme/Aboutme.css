@@ -1,11 +1,11 @@
-.container {
+/* .container {
     display: flex;
     justify-content: space-between;
     padding-left: 160px;
     padding-right: 320px;
-  }
-  
-  .principal {
+  } */
+
+/* .principal {
     align-items: center;
     background-color: #212529;
     height: max-content;
@@ -13,14 +13,47 @@
     
     border-radius: 20px;
     width: 500px; /* Ajusta el ancho según tus necesidades */
-    border-bottom: 5px solid cornflowerblue;
-    color: whitesmoke;
-  }
-  
-  .Me {
+/* border-bottom: 5px solid cornflowerblue;
+    color: whitesmoke;  */
+/* }  */
+
+/* .Me {
     align-items: center;
     height: 100px;
     width: max-content; /* Ajusta el ancho según tus necesidades */
-    padding-right: 50px;
+/* padding-right: 50px;
   }
-  
+   */
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  color: #fff;
+}
+.MyName {
+  font-size: 3em;
+}
+.MyName span {
+  color: aqua;
+}
+.dowcv {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+}
+.dowcv:hover {
+  background-color: #fff;
+  box-shadow: none;
+}
+.Fernando {
+  width: 350px;
+  border: 7px solid aqua;
+  height: 520px;
+}
