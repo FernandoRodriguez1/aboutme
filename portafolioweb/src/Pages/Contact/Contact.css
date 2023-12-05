@@ -1,0 +1,38 @@
+.main {
+  padding-left: 600px;
+}
+.boxA {
+  background-color: #212529;
+  height: 90vh;
+  height: max-content;
+  padding: 3vh;
+  border-radius: 20px;
+  width: 700px;
+  border-bottom: 5px solid coral;
+  color: rgb(245, 245, 245);
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.selectGenre {
+  width: 100%;
+  padding: 3px;
+}
+
+.tittle-form {
+  border-bottom: 4px solid coral;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.formAddgame {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btnForm {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+}

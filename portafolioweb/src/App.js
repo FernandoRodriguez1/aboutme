@@ -1,13 +1,12 @@
-
-import './App.css';
-import {  useEffect} from "react";
-import { urlClimas } from './endpoints';
-import Footer from './Pages/Footer/Footer';
-import Aboutme from './Pages/Aboutme/Aboutme';
-import Proyects from './Pages/Proyects/Proyects';
+import "./App.css";
+import { useEffect } from "react";
+import { urlClimas } from "./endpoints";
+import Footer from "./Pages/Footer/Footer";
+import Aboutme from "./Pages/Aboutme/Aboutme";
+import Proyects from "./Pages/Proyects/Proyects";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
-  
   useEffect(() => {
     fetch(urlClimas, {
       method: "GET",
@@ -25,17 +24,15 @@ function App() {
         console.error("Error al realizar la solicitud:", error);
       });
   }, []);
-  
-  
+
   return (
     <>
-    
-    <Aboutme/>
-    <Proyects/>
-    <Footer/>
+      <Aboutme />
+      <Proyects />
+      <Footer />
+      <Contact />
     </>
   );
-
 }
 
 export default App;
