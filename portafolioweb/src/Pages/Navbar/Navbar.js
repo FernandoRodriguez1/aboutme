@@ -1,5 +1,8 @@
 import React from "react";
 import "./Navbar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTerminal } from "@fortawesome/free-solid-svg-icons";
+
 function Navbar() {
   return (
     <>
@@ -7,8 +10,9 @@ function Navbar() {
         <header>
           <nav className="navbar">
             <div className="brand">
-              <h2>
-                <span>FR</span>
+              <h2 className="nav-left">
+                <FontAwesomeIcon icon={faTerminal} />
+                <span>Fernando Rodriguez</span>
               </h2>
             </div>
             <ul className="menu">

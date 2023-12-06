@@ -38,4 +38,11 @@
   justify-content: space-evenly;
   width: 300px;
   margin-top: 1em;
+  font-size: 30px;
+  color: #000;
+}
+.sotial-network i {
+  font-size: 1, 5em;
+  background-color: aqua;
+  color: #000;
 }

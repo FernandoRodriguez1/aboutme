@@ -26,6 +26,7 @@
    */
 .main {
   margin: 0 auto;
+  margin-left: 480px;
   width: 80vw;
   height: 80vh;
   display: grid;
@@ -56,4 +57,29 @@
   width: 350px;
   border: 7px solid aqua;
   height: 520px;
+}
+.dev-text {
+  font-family: "Courier New", Courier, monospace;
+  border-right: 4px solid;
+  width: 36ch; /* Ajusta según la longitud de tu texto */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(20) forwards,
+    blinking 0.5s infinite step-end alternate;
+  /* Agregamos animation-fill-mode y especificamos 'forwards' para retener el estado final */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+.div-img-fer {
+  margin-left: 380px;
 }

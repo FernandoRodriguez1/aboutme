@@ -33,34 +33,36 @@
 
 // export default Footer;
 import React from "react";
-import Linkedin from "../../Images/linkedinIcon.png";
-import Github from "../../Images/GitHub-logo.png";
-import Email from "../../Images/Email-logo.png";
+
 import "./Footer.css";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
         <h2>Fernando Rodriguez</h2>
-        <h5>Developer</h5>
+        <h7>Si prefieres contactarme por mis redes sociales </h7>
       </div>
       <div className="sotial-network">
         <a
           href="https://www.linkedin.com/in/fernando-rodriguez-a46935281/"
           target="blank"
         >
-          <img
-            className="img"
-            src={Linkedin}
-            alt="Linkedin Icon"
-            title="Linkedin"
-          />
+          <i>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </i>
         </a>
         <a href="https://github.com/FernandoRodriguez1" target="blank">
-          <img className="img" src={Github} alt="Github Icon" title="Github" />
+          <i>
+            <FontAwesomeIcon icon={faGithub} />
+          </i>
         </a>
         <a href="#">
-          <img className="img" src={Email} alt="Linkedin Icon" title="Email" />
+          <i>
+            <FontAwesomeIcon icon={faEnvelope} />
+          </i>
         </a>
       </div>
     </footer>

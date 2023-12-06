@@ -1,10 +1,23 @@
 .container-contact {
   padding: 3em;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 .contact-headings h2 {
   font-size: 3em;
   color: #fff;
+  width: 100vw;
+  padding-left: 80px;
+}
+.divider1 {
+  margin-left: 80px;
+  height: 4px;
+  width: 60px;
+  background-color: aqua;
+  margin-top: 5px;
 }
 .form {
   display: flex;

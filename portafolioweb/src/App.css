@@ -5,4 +5,5 @@ body {
   background-color: #191c32;
   margin: 0; /* Puede ser útil quitar el margen predeterminado del body */
   background-size: cover;
+  font-family: "Ubuntu", sans-serif;
 }

@@ -29,24 +29,17 @@ const Aboutme = () => {
       <main className="main">
         <div className="info-content">
           <h1 className="MyName">
-            Im <span>Fer</span>Rodrigue
+            Me llamo <span>Fernando </span>Rodriguez
           </h1>
-          <p>
-            Me llamo Fernando Rodriguez, tengo 19 años, estoy actualmente
-            cursando mi ultimo año de Tecnicatura en Programacion en la
-            Universidad Tecnologica Nacional de Rosario (UTN), soy de Rosario,
-            Santa Fe, me gusta trabajar en equipo, tengo una buena comunicacion
-            y predisposicion.
-          </p>
-          <a download href="#">
-            <button className="dowcv">download CV</button>
-          </a>
+          <h2 className="dev-text"> Y soy Designer & Front-End Developer</h2>
         </div>
-        <img
-          className="Fernando"
-          src={imagee}
-          alt="Fernando Rodriguez picture"
-        ></img>
+        <div>
+          <img
+            className="Fernando"
+            src={imagee}
+            alt="Fernando Rodriguez picture"
+          ></img>
+        </div>
       </main>
     </>
   );
