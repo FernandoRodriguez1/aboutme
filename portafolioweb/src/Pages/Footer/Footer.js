@@ -1,42 +1,20 @@
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Footer = () => {
   return (
-    // <footer className="footer">
-    //   <div className="footer-content">
-    //     <h2>Fernando Rodriguez</h2>
-    //     <h7>Si prefieres contactarme por mis redes sociales </h7>
-    //   </div>
-    //   <div className="sotial-network">
-    //     <a
-    //       href="https://www.linkedin.com/in/fernando-rodriguez-a46935281/"
-    //       target="blank"
-    //     >
-    //       <i>
-    //         <FontAwesomeIcon icon={faLinkedin} />
-    //       </i>
-    //     </a>
-    //     <a href="https://github.com/FernandoRodriguez1" target="blank">
-    //       <i>
-    //         <FontAwesomeIcon icon={faGithub} />
-    //       </i>
-    //     </a>
-    //     <a href="#">
-    //       <i>
-    //         <FontAwesomeIcon icon={faEnvelope} />
-    //       </i>
-    //     </a>
-    //   </div>
-    // </footer>
-    <footer class="footer">
-      <div class="footer-content">
+    <footer className="footer">
+      <div className="footer-content">
         <h2>Fernando Rodriguez</h2>
-        <h7>Si prefieres contactarme por mis redes sociales </h7>
+        <h4>Si prefieres contactarme por mis redes sociales </h4>
       </div>
-      <div class="sotial-networks">
+      <div className="sotial-networks">
         <a
           href="https://www.linkedin.com/in/fernando-rodriguez-a46935281/"
           target="blank"
@@ -50,9 +28,9 @@ const Footer = () => {
             <FontAwesomeIcon icon={faGithub} />
           </i>
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/feer.rodriguez1/" target="blank">
           <i>
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FontAwesomeIcon icon={faInstagram} />
           </i>
         </a>
       </div>

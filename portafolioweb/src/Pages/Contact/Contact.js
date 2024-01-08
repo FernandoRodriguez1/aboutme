@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import CopyToClipboardButton from "../../components/botom";
+import Footer from "../Footer/Footer";
 
 const ContactForm = () => {
   const [contact, setContact] = useState({
-    id: "",
     name: "",
     email: "",
     message: "",
@@ -17,67 +18,41 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (contact.message.trim() === "") {
-      alert("No puedes mandar un mensaje en blanco");
+      alert("No puedes enviar un mensaje en blanco");
       return;
     }
 
-    const response = await fetch(`http://localhost:3002/Contact`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        Name: { stringValue: contact.name },
-        Email: { stringValue: contact.email },
-        Message: { stringValue: contact.message },
-      }),
-    });
+    try {
+      const response = await fetch(
+        "http://localhost/portafolioweb/db-php.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams(contact),
+        }
+      );
 
-    if (response.ok) {
-      alert("¡Muchas Gracias por contactarme!");
-    } else {
-      alert("Error, no se pudo enviar.");
+      if (response.ok) {
+        alert("¡Muchas gracias por contactarme!");
+      } else {
+        alert("Error, no se pudo enviar.");
+      }
+    } catch (error) {
+      console.error("Error en la solicitud:", error);
     }
   };
 
-  console.log(contact);
   return (
-    <div className="contact-section">
+    <div className="contact-section" id="contacto">
       <div className="contact-heading">
         <h2>Puedes contactarme aquí:</h2>
         <div className="divider"></div>
       </div>
       <div className="container-contact">
-        <div className="contact-form">
-          <h4>Envíame un mensaje</h4>
-          <form onSubmit={handleSubmit} className="form-group">
-            <input
-              type="text"
-              name="name"
-              placeholder="Nombre"
-              className="input"
-              value={contact.name}
-              onChange={handleInputChange}
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              className="input"
-              value={contact.email}
-              onChange={handleInputChange}
-            />
-            <textarea
-              name="message"
-              value={contact.message}
-              onChange={handleInputChange}
-              placeholder="Inserte su mensaje aquí"
-            ></textarea>
-            <button type="submit" className="btn-submit">
-              Enviar
-            </button>
-          </form>
-        </div>
+        <h4>Puedes enviarme un mail a mi direccion de correo electronico</h4>
+        <CopyToClipboardButton />
       </div>
     </div>
   );

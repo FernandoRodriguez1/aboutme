@@ -8,15 +8,34 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #191c32;
+}
+/* Agrega este estilo a tu hoja de estilos CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo opcional para resaltar el elemento activo en la barra de navegación */
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(213, 88, 248);
 }
 
 .wrapper {
   width: 100vw;
-  height: 100vh;
-  background-color: #191c32;
-  color: #fff;
-}
 
+  background-color: #191c32;
+  color: #ffffff;
+}
+.navbar-principal {
+  background-color: #191c32;
+  color: #ffffff;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,7 +47,7 @@ body {
 }
 
 .brand span {
-  color: aqua;
+  color: rgb(213, 88, 248);
 }
 
 .menu {
@@ -66,7 +85,7 @@ body {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: aqua;
+  background-color: rgb(213, 88, 248);
   transform-origin: bottom right;
   transition: transform 0.4s ease-out;
 }
@@ -75,7 +94,7 @@ body {
   transform-origin: bottom left;
 }
 .menu .active {
-  color: aqua;
+  color: rgb(213, 88, 248);
 }
 
 .toggle-menu,
@@ -99,31 +118,34 @@ h1 {
 }
 
 .info-content span {
-  color: aqua;
+  color: rgb(213, 88, 248);
 }
 
 .download-cv,
 .project-details-button {
   padding: 10px 20px;
-  background-color: aqua;
+  background-color: rgb(213, 88, 248);
   border: none;
   border-radius: 20px;
   margin-top: 10px;
   cursor: pointer;
-  -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
-  -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
-  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  -webkit-box-shadow: 1px 3px 11px -5px rgb(213, 88, 248);
+  -moz-box-shadow: 1px 3px 11px -5px rgb(213, 88, 248);
+  box-shadow: 1px 3px 11px -5px rgb(213, 88, 248);
 }
 
 .download-cv:hover {
-  background-color: azure;
-  box-shadow: none;
+  background-color: rgb(183, 130, 221);
+}
+.project-details-button:hover {
+  background-color: rgb(183, 130, 221);
 }
 
 .main img {
-  border: 7px solid aqua;
-  width: 350px;
-  height: 520px;
+  margin-left: 300px;
+  border: 7px solid rgb(213, 88, 248);
+  width: max-content;
+  height: max-content;
   min-height: 300px;
 }
 
@@ -152,7 +174,7 @@ h1 {
 .divider {
   height: 4px;
   width: 60px;
-  background-color: aqua;
+  background-color: rgb(213, 88, 248);
   margin-top: 5px;
   margin-bottom: 2em;
 }
@@ -197,7 +219,12 @@ h1 {
   background-color: #2b3058;
   margin: 1em;
 }
-
+.p-card {
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
 .card__img {
   width: 100%;
   height: 150px;
@@ -249,6 +276,27 @@ h1 {
 .contact-section {
   padding: 3em;
 }
+.copy-button {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(213, 88, 248);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: rgb(183, 130, 221);
+}
+
+.success-message {
+  margin-left: 10px;
+  color: green;
+  font-family: Arial;
+  font-weight: bold;
+}
 
 .container-contact {
   margin: 0 auto;
@@ -292,7 +340,12 @@ h1 {
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
-  background-color: aqua;
+  background-color: rgb(213, 88, 248);
+  cursor: pointer;
+}
+
+.form-group .btn-submit:hover {
+  background-color: rgb(183, 130, 221);
 }
 
 .footer {
@@ -303,7 +356,7 @@ h1 {
   width: 100vw;
   height: 200px;
   padding: 2em;
-  background-color: aqua;
+  background-color: rgb(213, 88, 248);
 }
 
 .footer-content h2 {
@@ -338,7 +391,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5em;
+  padding: 3em;
 }
 
 .portfolio-heading h2,
@@ -437,7 +490,7 @@ h1 {
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
-  background-color: aqua;
+  background-color: rgb(213, 88, 248);
 }
 
 .footer {
@@ -448,16 +501,11 @@ h1 {
   width: 100vw;
   height: 200px;
   padding: 2em;
-  background-color: aqua;
+  background-color: rgb(213, 88, 248);
 }
 
 .footer-content h2 {
   font-size: 2em;
-}
-
-.footer-content h5 {
-  font-size: 1.5em;
-  text-align: center;
 }
 
 .sotial-networks {
@@ -521,6 +569,7 @@ h1 {
   }
 
   .main img {
+    margin-left: 0;
     width: min(70%, 350px);
     height: auto;
   }
