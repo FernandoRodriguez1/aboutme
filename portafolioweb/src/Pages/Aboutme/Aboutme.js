@@ -11,17 +11,25 @@ const Aboutme = () => {
             Soy<span> Fernando</span> Rodriguez
           </h1>
 
-          <p className="info-content__p">
-            Estoy por graduarme en una carrera universitaria orientada a la
-            programacion, me considero muy apto para desarrollos de pagina web y
-            estoy muy preparado para cualquier trabajo. Estoy por graduarme en
-            una carrera universitaria orientada a la programacion, me considero
-            muy apto para desarrollos de pagina web y estoy muy preparado para
-            cualquier trabajo.
+          <p className="info-content__p" style={{ marginBottom: "30px" }}>
+            Estoy por graduarme en la carrera Tecnicatura en Programacion en la
+            Universidad Tecnologica Nacional de Rosario, me considero muy apto
+            para desarrollos de pagina web y estoy muy preparado para cualquier
+            trabajo.
           </p>
-          <a download href="#">
-            <button className="download-cv">Download CV</button>
-          </a>
+          <div className="info-content__p2">
+            <h3>
+              Mis <span>Tecnologias</span>
+            </h3>
+            <p style={{ fontWeight: "bold" }}>
+              Las tecnologias que utilizo son: React,
+              JavaScript,CSS,HTML5,Entity Framework Core, JWT, C#, SQL, Git,
+              Firebase
+            </p>
+            <a download href="#">
+              <button className="download-cv">Download CV</button>
+            </a>
+          </div>
         </div>
         <img src={fer} alt="" />
       </main>

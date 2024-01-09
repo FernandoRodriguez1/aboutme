@@ -28,12 +28,10 @@ const Navbar = () => {
         toggleOpenRef.current.style.display = "none";
         toggleCloseRef.current.style.display = "block";
 
-        // Después de 2 segundos, establecer isMenuOpen en false
         const timeoutId = setTimeout(() => {
           setIsMenuOpen(false);
         }, 2000);
 
-        // Limpieza del timeout al desmontar el componente o al cambiar isMenuOpen
         return () => clearTimeout(timeoutId);
       } else {
         toggleOpenRef.current.style.display = "block";

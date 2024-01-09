@@ -21,6 +21,7 @@ const Portafolio = () => {
           <div className="card__title">
             <h2>App de Clima online</h2>
           </div>
+          <div className="divider1"></div>
           <p className="p-card">
             Clima app vinculado directamente con un API, presentado como
             proyecto universitario (1er Año), full responsive, y correcto
@@ -49,6 +50,7 @@ const Portafolio = () => {
           <div className="card__title">
             <h2>Reviews Page</h2>
           </div>
+          <div className="divider1"></div>
           <p className="p-card">
             Pagina de videojuegos donde se pueden valorar a los mismos a traves
             de una review, cuenta con authenticacion de usuarios y uso de base
@@ -75,8 +77,9 @@ const Portafolio = () => {
         <div className="card">
           <div className="card__img3"></div>
           <div className="card__title">
-            <h2>Base de Datos EF</h2>
+            <h2 className="h2-cardtitle">Base de Datos EF</h2>
           </div>
+          <div className="divider1"></div>
           <p className="p-card">
             Base de datos hecha con Entity Framework core, cuenta con
             authenticacion de usuarios a traves de JWT, servicios esenciales de

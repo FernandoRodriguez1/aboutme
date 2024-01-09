@@ -178,6 +178,13 @@ h1 {
   margin-top: 5px;
   margin-bottom: 2em;
 }
+.divider1 {
+  height: 4px;
+  width: 300px;
+  background-color: rgb(213, 88, 248);
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
 
 .about p {
   margin-bottom: 1em;
@@ -224,6 +231,8 @@ h1 {
   justify-content: center;
   color: #ffffff;
   padding-bottom: 10px;
+  font-weight: bold;
+  padding-left: 8px;
 }
 .card__img {
   width: 100%;
@@ -242,10 +251,6 @@ h1 {
   height: 150px;
   background-image: url(../src/Images/Backend.png);
   background-size: cover;
-}
-
-.card__title {
-  padding: 20px;
 }
 
 .card__proyect-links {
@@ -278,9 +283,10 @@ h1 {
 }
 .copy-button {
   padding: 10px;
+  margin-left: 15px;
   font-size: 1em;
   cursor: pointer;
-  color: #fff;
+  color: black;
   background-color: rgb(213, 88, 248);
   border: none;
   border-radius: 5px;
@@ -422,7 +428,7 @@ h1 {
 }
 
 .card__title {
-  padding: 20px;
+  padding: 5px;
 }
 
 .card__proyect-links {
@@ -466,7 +472,9 @@ h1 {
   width: 30vw;
   margin-top: 2em;
 }
-
+.info-content__p {
+  font-weight: bold;
+}
 .form-group textarea {
   height: 150px;
   padding: 1.5em;
@@ -531,9 +539,10 @@ h1 {
     justify-content: center;
     position: absolute;
     top: 0;
+    border-radius: 15px;
     left: 0;
-    height: 100vh;
-    background-color: #2b3058;
+    height: 80vh;
+    background-color: rgba(25, 28, 50, 0.9);
     z-index: 1;
     transform: translateX(-110%);
     transition: all 0.5s ease-in-out;
@@ -584,6 +593,7 @@ h1 {
   .info-content .sotial-networks,
   .info-content__subtitle {
     display: block;
+    font-weight: bold;
   }
 
   .info-content__subtitle {
@@ -600,7 +610,12 @@ h1 {
   .contact-section__img {
     display: none;
   }
-
+  .info-content__p2 {
+    margin-top: 30px;
+  }
+  .info-content__p2 span {
+    color: rgb(213, 88, 248);
+  }
   .form-group {
     width: 80vw;
   }
