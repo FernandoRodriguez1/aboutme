@@ -7,11 +7,16 @@ const Navbar = () => {
   const toggleOpenRef = useRef(null);
   const toggleCloseRef = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
 
   useEffect(() => {
     const toggleMenu = () => {
       setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
     };
+
+    const handleClickLang =()=>{
+      
+    }
 
     toggleOpenRef.current.addEventListener("click", toggleMenu);
     toggleCloseRef.current.addEventListener("click", toggleMenu);
@@ -50,6 +55,11 @@ const Navbar = () => {
             <h2>
               F<span>R</span>
             </h2>
+            
+          </div>
+          <div >
+            <button className="btn-lang">Español</button>
+            
           </div>
           <ul className={`menu ${isMenuOpen ? "show-menu" : ""}`} ref={menuRef}>
             <li>
