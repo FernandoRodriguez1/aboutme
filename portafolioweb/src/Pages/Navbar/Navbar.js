@@ -2,22 +2,21 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
 import ComboLanguage from "../../components/ComboLanguage";
+import useTranslate from "../../customhooks/UseTranslate";
 
 const Navbar = () => {
+  const translate = useTranslate();
   const menuRef = useRef(null);
   const toggleOpenRef = useRef(null);
   const toggleCloseRef = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
 
   useEffect(() => {
     const toggleMenu = () => {
       setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
     };
 
-    const handleClickLang =()=>{
-      
-    }
+    const handleClickLang = () => {};
 
     toggleOpenRef.current.addEventListener("click", toggleMenu);
     toggleCloseRef.current.addEventListener("click", toggleMenu);
@@ -56,21 +55,19 @@ const Navbar = () => {
             <h2>
               F<span>R</span>
             </h2>
-            
           </div>
-          <div >
-            <ComboLanguage/>
-            
+          <div>
+            <ComboLanguage />
           </div>
           <ul className={`menu ${isMenuOpen ? "show-menu" : ""}`} ref={menuRef}>
             <li>
-              <a className="/#">Inicio</a>
+              <a className="/#">{translate("navbar1")}</a>
             </li>
             <li>
-              <a href="#proyectos">Portafolio</a>
+              <a href="#proyectos">{translate("navbar2")}</a>
             </li>
             <li>
-              <a href="#contacto">Contacto</a>
+              <a href="#contacto">{translate("navbar3")}</a>
             </li>
           </ul>
           <div className="toggle-menu">

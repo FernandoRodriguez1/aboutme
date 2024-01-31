@@ -1,14 +1,16 @@
 import React from "react";
 import fer from "../../Images/fer.png";
+import useTranslate from "../../customhooks/UseTranslate";
 
 const Aboutme = () => {
+  const translate = useTranslate();
   return (
     <div className="wrapper">
       <main className="main">
         <div className="info-content">
           <span className="info-content__subtitle">Frontend Developer</span>
           <h1>
-            Soy<span> Fernando</span> Rodriguez
+            <span>{translate("title-aboutme")}</span>
           </h1>
 
           <p className="info-content__p" style={{ marginBottom: "30px" }}>
@@ -19,13 +21,9 @@ const Aboutme = () => {
           </p>
           <div className="info-content__p2">
             <h3>
-              Mis <span>Tecnologias</span>
+              <span>{translate("title-mytech")}</span>
             </h3>
-            <p style={{ fontWeight: "bold" }}>
-              Las tecnologias que utilizo son: React,
-              JavaScript,CSS,HTML5,Entity Framework Core, JWT, C#, SQL, Git,
-              Firebase
-            </p>
+            <p style={{ fontWeight: "bold" }}>{translate("description")}</p>
             <a download href="#">
               <button className="download-cv">Download CV</button>
             </a>

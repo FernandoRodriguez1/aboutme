@@ -9,11 +9,16 @@ const ComboLanguage = () => {
   const translate = useTranslate();
 
   const changeLanguageHandler = (event) => {
-    changeLanguage(event.target.value);
+    console.log("Event:", event);
+    if (event && event.target) {
+      console.log("Value:", event.target.value);
+      changeLanguage(event.target.value);
+    }
   };
+
   return (
     <Form.Select
-      onchange={changeLanguageHandler}
+      onChange={changeLanguageHandler}
       value={language}
       className="w-50 mb-4"
       aria-label="Select language"

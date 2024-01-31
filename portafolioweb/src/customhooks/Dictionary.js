@@ -4,11 +4,11 @@ export const dictionary_translations = {
     { key: "navbar2", value: "Portfolio" },
     { key: "navbar3", value: "Contact" },
     { key: "title-mytech", value: "My Technologies" },
-    { key: "title-aboutme", value: "I´m Fernando Rodriguez" },
+    { key: "title-aboutme", value: "I'm Fernando Rodriguez" },
     {
       key: "description",
       value:
-        "The technologies I use are: React, JavaScript,CSS,HTML5,Entity Framework Core, JWT, C#, SQL, Git, Firebase",
+        "The services i offer: React, JavaScript,CSS,HTML5,Entity Framework Core, JWT, C#, SQL, Git, Firebase",
     },
     { key: "portfolio1-title", value: "App Weather Online" },
     {

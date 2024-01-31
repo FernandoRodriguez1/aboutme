@@ -4,12 +4,21 @@ import { TranslationContext } from "./TranslationContext";
 
 const useTranslate = () => {
   const { language } = useContext(TranslationContext);
-  return (key) => {
-    const translation = dictionary_translations[language]
-      ? dictionary_translations[language].find((t) => t.key === key).value
-      : dictionary_translations["en"].find((t) => t.key === key).value;
+  const translations =
+    dictionary_translations[language] || dictionary_translations["en"];
 
-    return translation || key;
+  const translationCache = {};
+
+  return (key) => {
+    if (translationCache[key]) {
+      return translationCache[key];
+    }
+
+    const translationObject = translations.find((t) => t.key === key);
+    const translation = translationObject ? translationObject.value : key;
+    translationCache[key] = translation;
+
+    return translation;
   };
 };
 
