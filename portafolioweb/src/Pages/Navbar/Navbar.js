@@ -1,6 +1,7 @@
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef, useState } from "react";
+import ComboLanguage from "../../components/ComboLanguage";
 
 const Navbar = () => {
   const menuRef = useRef(null);
@@ -58,7 +59,7 @@ const Navbar = () => {
             
           </div>
           <div >
-            <button className="btn-lang">Español</button>
+            <ComboLanguage/>
             
           </div>
           <ul className={`menu ${isMenuOpen ? "show-menu" : ""}`} ref={menuRef}>
