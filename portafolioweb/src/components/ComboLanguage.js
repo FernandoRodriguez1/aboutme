@@ -20,7 +20,7 @@ const ComboLanguage = () => {
     <Form.Select
       onChange={changeLanguageHandler}
       value={language}
-      className="w-50 mb-4"
+      className="copy-button"
       aria-label="Select language"
     >
       <option value="es">{translate("spanish_lang")}</option>

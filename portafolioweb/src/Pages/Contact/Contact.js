@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import CopyToClipboardButton from "../../components/botom";
 import Footer from "../Footer/Footer";
+import useTranslate from "../../customhooks/UseTranslate";
 
 const ContactForm = () => {
+  const translate = useTranslate();
   const [contact, setContact] = useState({
     name: "",
     email: "",
@@ -47,11 +49,11 @@ const ContactForm = () => {
   return (
     <div className="contact-section" id="contacto">
       <div className="contact-heading">
-        <h2>Puedes contactarme aquí:</h2>
+        <h2>{translate("contact-title")}</h2>
         <div className="divider"></div>
       </div>
       <div className="container-contact">
-        <h4>Puedes enviarme un mail a mi direccion de correo electronico</h4>
+        <h4>{translate("contact-p")}</h4>
         <CopyToClipboardButton />
       </div>
     </div>

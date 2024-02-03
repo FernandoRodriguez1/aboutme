@@ -7,26 +7,24 @@ import iconasp from "../../Images/icon-aspnet.png";
 import iconjs from "../../Images/icon-javascript.png";
 import iconboost from "../../Images/icon-boost.png";
 import iconreact from "../../Images/icon-react.png";
+import useTranslate from "../../customhooks/UseTranslate";
 
 const Portafolio = () => {
+  const translate = useTranslate();
   return (
     <div id="proyectos" className="portfolio">
       <div className="portfolio-heading">
-        <h2>My Portfolio</h2>
+        <h2>{translate("portfolio")}</h2>
         <div className="divider"></div>
       </div>
       <div className="container">
         <div className="card">
           <div className="card__img"></div>
           <div className="card__title">
-            <h2>App de Clima online</h2>
+            <h2>{translate("portfolio1-title1")}</h2>
           </div>
           <div className="divider1"></div>
-          <p className="p-card">
-            Clima app vinculado directamente con un API, presentado como
-            proyecto universitario (1er Año), full responsive, y correcto
-            desarrollo enfocado al cliente
-          </p>
+          <p className="p-card">{translate("portfolio1")}</p>
           <div className="card__proyect-links">
             <img className="icons-img" src={iconhtml}></img>
 
@@ -40,7 +38,7 @@ const Portafolio = () => {
                 href="https://github.com/ValentinEandi/TPINTEGRADORLAB.git"
                 target="blank"
               >
-                Clima App
+                {translate("portfolio1-title1")}
               </a>
             </button>
           </div>
@@ -48,14 +46,10 @@ const Portafolio = () => {
         <div className="card">
           <div className="card__img2"></div>
           <div className="card__title">
-            <h2>Reviews Page</h2>
+            <h2>{translate("portfolio2-title2")}</h2>
           </div>
           <div className="divider1"></div>
-          <p className="p-card">
-            Pagina de videojuegos donde se pueden valorar a los mismos a traves
-            de una review, cuenta con authenticacion de usuarios y uso de base
-            de datos.
-          </p>
+          <p className="p-card">{translate("portfolio2")}</p>
           <div className="card__proyect-links">
             <img className="icons-img" src={iconreact}></img>
 
@@ -69,7 +63,7 @@ const Portafolio = () => {
                 href="https://github.com/MathyNp/TPI_NapolitanoRodriguezVazquez.git"
                 target="blank"
               >
-                Games Review
+                {translate("portfolio2-title2")}
               </a>
             </button>
           </div>
@@ -77,14 +71,10 @@ const Portafolio = () => {
         <div className="card">
           <div className="card__img3"></div>
           <div className="card__title">
-            <h2 className="h2-cardtitle">Base de Datos EF</h2>
+            <h2 className="h2-cardtitle">{translate("portfolio3-title3")}</h2>
           </div>
           <div className="divider1"></div>
-          <p className="p-card">
-            Base de datos hecha con Entity Framework core, cuenta con
-            authenticacion de usuarios a traves de JWT, servicios esenciales de
-            Api rest, ORM, MVC y Dtos.
-          </p>
+          <p className="p-card">{translate("portfolio3")}</p>
           <div className="card__proyect-links">
             <img className="icons-img" src={iconcsharp}></img>
 
@@ -98,7 +88,7 @@ const Portafolio = () => {
                 href="https://github.com/FernandoRodriguez1/TPI-integrador-Prog3.git"
                 target="blank"
               >
-                Database
+                {translate("portfolio3-title3")}
               </a>
             </button>
           </div>

@@ -8,16 +8,15 @@ const Aboutme = () => {
     <div className="wrapper">
       <main className="main">
         <div className="info-content">
-          <span className="info-content__subtitle">Frontend Developer</span>
+          <span className="info-content__subtitle">
+            {translate("subtitle-aboutme-mobile")}
+          </span>
           <h1>
             <span>{translate("title-aboutme")}</span>
           </h1>
 
           <p className="info-content__p" style={{ marginBottom: "30px" }}>
-            Estoy por graduarme en la carrera Tecnicatura en Programacion en la
-            Universidad Tecnologica Nacional de Rosario, me considero muy apto
-            para desarrollos de pagina web y estoy muy preparado para cualquier
-            trabajo.
+            {translate("aboutme-p")}
           </p>
           <div className="info-content__p2">
             <h3>
@@ -25,11 +24,11 @@ const Aboutme = () => {
             </h3>
             <p style={{ fontWeight: "bold" }}>{translate("description")}</p>
             <a download href="#">
-              <button className="download-cv">Download CV</button>
+              <button className="download-cv">{translate("btn-cv")}</button>
             </a>
           </div>
         </div>
-        <img src={fer} alt="" />
+        <img src={fer} alt="Fernando Rodriguez" />
       </main>
     </div>
   );

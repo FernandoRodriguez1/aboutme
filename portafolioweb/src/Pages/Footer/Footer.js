@@ -6,13 +6,15 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import useTranslate from "../../customhooks/UseTranslate";
 
 const Footer = () => {
+  const translate = useTranslate();
   return (
     <footer className="footer">
       <div className="footer-content">
         <h2>Fernando Rodriguez</h2>
-        <h4>Si prefieres contactarme por mis redes sociales </h4>
+        <h4>{translate("footer")}</h4>
       </div>
       <div className="sotial-networks">
         <a

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import useTranslate from "../customhooks/UseTranslate";
 
 const CopyToClipboardButton = () => {
+  const translate = useTranslate();
   const emailToCopy = "rodriguezfernando1901@gmail.com";
   const [copied, setCopied] = useState(false);
 
@@ -26,7 +28,7 @@ const CopyToClipboardButton = () => {
   return (
     <div>
       <button className="copy-button" onClick={copyToClipboard}>
-        Copiar dirección de correo
+        {translate("contact-button")}
       </button>
       {copied && (
         <span
@@ -37,7 +39,7 @@ const CopyToClipboardButton = () => {
             fontWeight: "bold",
           }}
         >
-          ¡Copiado con éxito!
+          {translate("contact-button-green")}
         </span>
       )}
     </div>
