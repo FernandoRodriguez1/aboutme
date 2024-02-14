@@ -16,8 +16,6 @@ const Navbar = () => {
       setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
     };
 
-    const handleClickLang = () => {};
-
     toggleOpenRef.current.addEventListener("click", toggleMenu);
     toggleCloseRef.current.addEventListener("click", toggleMenu);
 
@@ -56,9 +54,7 @@ const Navbar = () => {
               F<span>R</span>
             </h2>
           </div>
-          <div>
-            <ComboLanguage />
-          </div>
+
           <ul className={`menu ${isMenuOpen ? "show-menu" : ""}`} ref={menuRef}>
             <li>
               <a className="/#">{translate("navbar1")}</a>
@@ -70,6 +66,7 @@ const Navbar = () => {
               <a href="#contacto">{translate("navbar3")}</a>
             </li>
           </ul>
+          <ComboLanguage />
           <div className="toggle-menu">
             <FontAwesomeIcon
               className="fas fa-bars"
