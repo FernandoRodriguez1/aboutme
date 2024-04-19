@@ -1,7 +1,7 @@
 import React from "react";
 import fer from "../../Images/fer.png";
 import useTranslate from "../../customhooks/UseTranslate";
-
+import ferpdf from "../../FernandoRodriguez1.pdf";
 const Aboutme = () => {
   const translate = useTranslate();
   return (
@@ -23,7 +23,7 @@ const Aboutme = () => {
               <span>{translate("title-mytech")}</span>
             </h3>
             <p style={{ fontWeight: "bold" }}>{translate("description")}</p>
-            <a download href="#">
+            <a download href={ferpdf}>
               <button className="download-cv">{translate("btn-cv")}</button>
             </a>
           </div>
