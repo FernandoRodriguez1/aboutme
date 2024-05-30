@@ -1,7 +1,7 @@
 import React from "react";
 import fer from "../../Images/fer.png";
 import useTranslate from "../../customhooks/UseTranslate";
-import ferpdf from "../../FernandoRodriguez1.pdf";
+import ferpdf from "../../FernandoRodriguez.pdf";
 const Aboutme = () => {
   const translate = useTranslate();
   return (

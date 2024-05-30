@@ -29,6 +29,7 @@ const ComboLanguage = () => {
       >
         <option value="es">{translate("ES")}</option>
         <option value="en">{translate("EN")}</option>
+        <option value="pt_BR">{translate("pt_BR")}</option>
       </Form.Select>
     </div>
   );

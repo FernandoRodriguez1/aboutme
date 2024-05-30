@@ -89,4 +89,55 @@ export const dictionary_translations = {
     { key: "contact-button-green", value: "¡Copiado con éxito!" },
     { key: "footer", value: "Si prefieres contactarme por mis redes" },
   ],
+  pt_BR: [
+    { key: "navbar1", value: "Página Inicial" },
+    { key: "navbar2", value: "Portfólio" },
+    { key: "navbar3", value: "Contato" },
+    { key: "title-aboutme", value: "Eu sou Fernando Rodriguez" },
+    { key: "subtitle-aboutme-mobile", value: "Programador Frontend" },
+    {
+      key: "aboutme-p",
+      value:
+        "Estou prestes a me formar na Technicatura em Programação da Universidad Tecnologica Nacional de Rosario, me considero muito apto para o desenvolvimento de páginas da web e estou muito preparado para qualquer trabalho.",
+    },
+    { key: "title-mytech", value: "As minhas capacidades" },
+
+    {
+      key: "description",
+      value:
+        "As tecnologias que utilizo são: React, JavaScript, CSS, HTML5, Entity Framework Core, JWT, C#, SQL, Git, Firebase",
+    },
+    { key: "btn-cv", value: "Descarregar meu currículo" },
+    { key: "portfolio", value: "Meu Portfolio" },
+    { key: "portfolio1-title1", value: "Aplicação meteorológica online" },
+    {
+      key: "portfolio1",
+      value:
+        "Aplicação meteorológica diretamente ligado a uma API, apresentado como um projeto universitário (1º ano), totalmente responsivo e com um desenvolvimento correto centrado no cliente.",
+    },
+    { key: "portfolio2-title2", value: "Página de Reseñas" },
+    {
+      key: "portfolio2",
+      value:
+        "Página de jogos de vídeo onde é possível avaliá-los através de uma crítica, com autenticação de utilizador e utilização de base de dados.",
+    },
+    { key: "portfolio3-title3", value: "Base de dados EF" },
+    {
+      key: "portfolio3",
+      value:
+        "Base de dados criada com o núcleo Entity Framework, com autenticação de utilizador através de JWT e serviços essenciais de Api rest, ORM, MVC y Dtos.",
+    },
+    { key: "contact-title", value: "Pode contactar-me aqui: " },
+    {
+      key: "contact-p",
+      value:
+        "Pode enviar uma mensagem para o meu endereço de correio eletrónico",
+    },
+    { key: "contact-button", value: "Copiar endereço de correio eletrónico" },
+    { key: "contact-button-green", value: "Copiado com sucesso!" },
+    {
+      key: "footer",
+      value: "Se preferir contactar-me através das minhas redes",
+    },
+  ],
 };
